@@ -1,0 +1,155 @@
+/* Universal selector applies format to entire page */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body background */
+body {
+  background-color: #d9dcd6;
+}
+
+/* Applies font, background color, font color to main header */
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #d372a4;
+  color: #ffffff;
+}
+
+/* Bolds header h1 class and enlarges font */
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+/* Links at top */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+/* No bullets for header list */
+.header nav ul {
+  list-style-type: none;
+}
+
+/* Adjusts list 25 px from left, horizontal */
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/*SHOULD underline when hovering*/
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Text color white */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Adjusts font size for paragraphs */
+p {
+  font-size: 16px;
+}
+
+/* Gives size for background image */
+.hero {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../Assets/images/bebrilliant.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Justifies left */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+/* Justifies right */
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* Content formatting */
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Sidebar formatting */
+.benefits {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
+}
+
+/* Sidebar font */
+.aside {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+/* Sidebar Title fonts */
+.aside h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Sidebar background/images */
+.aside img {
+  display: block;
+  margin: 10px auto;
+  max-width: 190px;
+}
+
+/* Main tab formatting */
+.main-tab {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+/* Main tab images */
+.main-tab img {
+  max-height: 200px;
+}
+
+/* Main tab heading */
+.main-tab h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* Footer */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+/* Footer heading */
+.footer h2 {
+  font-size: 20px;
+}
