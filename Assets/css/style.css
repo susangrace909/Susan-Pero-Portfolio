@@ -7,7 +7,7 @@
 
 /* Body background */
 body {
-  background-color: #d9dcd6;
+  background-color: #5e5e5e;
 }
 
 /* Applies font, background color, font color to main header */
@@ -44,9 +44,32 @@ body {
   margin-left: 25px;
 }
 
-/*SHOULD underline when hovering*/
+/*Underlines when hovering*/
 .header nav a:hover {
   text-decoration: underline;
+}
+
+/*Project placards*/
+.project {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+  flex: 0 0 400px;
+  width: 300px;
+  height: 600px;
+}
+
+/*Project images*/
+.project img {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+}
+
+/*SHOULD lighten when hovering*/
+.project img:hover {
+  opacity: 0.5;
 }
 
 /* Text color white */
