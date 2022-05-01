@@ -15,7 +15,7 @@ body {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #d372a4;
+  background-color: #a4657a;
   color: #ffffff;
 }
 
@@ -49,8 +49,18 @@ body {
   text-decoration: underline;
 }
 
+/*Background image*/
+.background {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/bebrilliant.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
 /*Subsection formatting*/
-article {
+.article {
   padding-top: 15px;
   margin-left: 20px;
   margin-right: 40px;
@@ -61,7 +71,7 @@ article {
 }
 
 /* Work Section*/
-section {
+.section {
   padding-top: 15px;
   margin-right: 60px;
   float: left;
@@ -72,6 +82,8 @@ section {
   width: 300px;
   height: 600px;
   color: #ffffff;
+  float: left;
+  display: inline-block;
 }
 
 /*Project images*/
@@ -82,7 +94,7 @@ section {
   width: 90%;
 }
 
-/*SHOULD lighten when hovering*/
+/*Placards lighten when hovering*/
 .project img:hover {
   opacity: 0.5;
 }
@@ -91,125 +103,53 @@ section {
 a {
   color: #ffffff;
   text-decoration: none;
+  padding: 10px;
 }
 
 /* Adjusts font size for paragraphs */
 p {
   font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
 }
 
-/* Gives size for background image */
-.hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../Assets/images/bebrilliant.jpg");
-  background-size: cover;
-  background-position: center;
+/*Header 2 fonts*/
+h2 {
+  color: #ffffff;
+  padding: 10px;
 }
-/* Justifies left */
-.float-left {
+
+.contact {
+  padding-top: 15px;
+  margin-right: 20px;
+  display: inline-block;
   float: left;
-  margin-right: 25px;
 }
 
-/* Justifies right */
-.float-right {
-  float: right;
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-left: 25px;
 }
 
-/* Content formatting */
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
+.contact a:hover {
+  text-decoration: underline;
+  color: #a4657a;
 }
 
-/* Sidebar formatting */
-.benefits {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #2589bd;
-}
-
-/* Sidebar font */
-.aside {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-/* Sidebar Title fonts */
-.aside h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/* Sidebar background/images */
-.aside img {
-  display: block;
-  margin: 10px auto;
-  max-width: 190px;
-}
-
-/* Main tab formatting */
-.main-tab {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-/* Main tab images */
-.main-tab img {
-  max-height: 200px;
-}
-
-/* Main tab heading */
-.main-tab h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
+/* MAKE NEW FLEX FOR CONTACT AND RESUME SECTION*/
 
 /* Footer */
 .footer {
+  font-size: 20px;
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-}
-
-.article contact {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: left;
-}
-
-.article contact ul {
-  list-style-type: none;
-}
-
-.article contact ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-.article contact a:hover {
-  text-decoration: underline;
-  color: yellow;
-}
-
-/* MAKE NEW FLEX FOR CONTACT AND RESUME SECTION*/
-
-/* Footer heading */
-.footer h2 {
-  font-size: 20px;
 }
