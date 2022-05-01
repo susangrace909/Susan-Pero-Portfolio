@@ -8,13 +8,13 @@
 /* Body background */
 body {
   background-color: #5e5e5e;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Applies font, background color, font color to main header */
 .header {
   padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-color: #a4657a;
   color: #ffffff;
 }
@@ -30,7 +30,6 @@ body {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
 /* No bullets for header list */
@@ -65,7 +64,6 @@ body {
   margin-left: 20px;
   margin-right: 40px;
   float: left;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
@@ -141,14 +139,16 @@ h2 {
   color: #a4657a;
 }
 
+.resume a:hover {
+  color: #a4657a;
+}
 /* MAKE NEW FLEX FOR CONTACT AND RESUME SECTION*/
 
 /* Footer */
 .footer {
   font-size: 20px;
+  color: #ffffff;
   padding: 30px;
   clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
