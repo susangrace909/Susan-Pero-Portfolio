@@ -35,8 +35,10 @@
 
     <div class="background"></div>
 
-    <article id="About-Me">
-      <!--About Me Section-->
+    <div class="overall"></div>
+
+    <!--About Me Section-->
+    <article id="About-Me" class="AboutMe">
       <h2>About Me</h2>
       <p>
         Hello! My name is Susan Pero and I am from Orlando, Florida. I grew up
@@ -50,13 +52,16 @@
         am currently attending UCF's Coding Bootcamp with hopes of a job upon
         completion.
       </p>
-      <br />
+    <br />
+  </article>
+
 
       <!--Work Section-->
       <!--Placards that act as links to code projects-->
+    <article id="Work" class="project">
       <h2>Work</h2>
       <div>
-        <section id="Work" class="project">
+        <section>
           <header>Project 1</header>
           <img src="./Assets/images/gerberdaisy.jpg" alt="Gerber Daisy" />
         </section>
@@ -73,16 +78,16 @@
           <img src="./Assets/images/salmon.jpg" alt="Salmon Flowers" />
         </section>
       </div>
-      </article>
-      </body>
+    </article>
 
-      <!--Contact Me Section-->
-      <div>
-      <section id="Contact-Me" class ="contact">
+    <!--Contact Me Section-->
+    <div>
+    <article>
+      <section id="Contact-Me" class="contact">
         <h2>Contact Me</h2>
         <ul>
           <li>
-            <a>Phone: (407)952-9367</a>
+            <a href="tel:407-952-9367">Phone</a>
           </li>
           <li>
             <a href="mailto:susangrace909@gmail.com">Email</a>
@@ -91,18 +96,23 @@
             <a href="https://github.com/susangrace909/">GitHub</a>
           </li>
         </ul>
-      </class>
       </section>
-      </div>
-      <p></p>
+    </div>
+  </article>
 
-      <!--Resume Section-->
+    <!--Resume Section-->
+  <article id="Resume" class="resume">
     <section id="Resume">
       <h2>Resume</h2>
-      <!--will add link to open resume doc later in course-->
-      <p> <a href="RESUME DOCUMENT WILL BE IN IMAGES">Here you go!</a></p>
+      <!--will add link to open resume doc later in course
+      wanting to change this to div instead of p so you can format .resume dev{}
+        separate from the about me info, just depends on how you are using this section-->
+      <div img src="./Assets/images/Resume.pdf"><a>Here you go!</a></div>
     </section>
-<footer class="footer">
-  <h3>Thanks for checking out my portfolio!</h3>
-</footer>
+  </article>
+
+    <footer class="footer">
+      <h3>Thanks for checking out my portfolio!</h3>
+    </footer>
+  </body>
 </html>

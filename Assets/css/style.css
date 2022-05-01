@@ -5,14 +5,14 @@
   margin: 0;
 }
 
-/* Body background */
+/* Body background and font*/
 body {
   background-color: #5e5e5e;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-/* Applies font, background color, font color to main header */
+/* Applies background color, font color to main header */
 .header {
   padding: 20px;
   background-color: #a4657a;
@@ -43,6 +43,13 @@ body {
   margin-left: 25px;
 }
 
+/* Text color white */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
 /*Underlines when hovering*/
 .header nav a:hover {
   text-decoration: underline;
@@ -58,6 +65,10 @@ body {
   background-size: contain;
 }
 
+/*Stacks sections for about me, work, resume, contact me*/
+.overall {
+  display: block;
+}
 /*Subsection formatting*/
 .article {
   padding-top: 15px;
@@ -68,24 +79,23 @@ body {
   color: #ffffff;
 }
 
-/* Work Section*/
-.section {
-  padding-top: 15px;
-  margin-right: 60px;
-  float: left;
-}
 /*Project placards*/
-.project {
-  padding: 10px;
+.project div {
+  display: flex;
+  padding: 20px;
+}
+
+/*Project placards box*/
+.project section {
+  margin-right: 60px;
   width: 300px;
-  height: 600px;
+  height: auto;
   color: #ffffff;
-  float: left;
-  display: inline-block;
 }
 
 /*Project images*/
 .project img {
+  margin-top: 10px;
   border: 5px;
   border-style: solid;
   border-color: white;
@@ -97,30 +107,28 @@ body {
   opacity: 0.5;
 }
 
-/* Text color white */
-a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
-}
-
 /* Adjusts font size for paragraphs */
 p {
   font-size: 16px;
   color: #ffffff;
   padding: 10px;
+  padding-left: 50px;
 }
 
 /*Header 2 fonts*/
 h2 {
   color: #ffffff;
   padding: 10px;
+  padding-left: 20px;
 }
 
 .contact {
+  font-size: 20px;
+  padding: 30px;
+  clear: both;
+  float: left;
   padding-top: 15px;
   margin-right: 20px;
-  float: left;
 }
 
 .contact ul {
@@ -142,7 +150,6 @@ h2 {
 .resume a:hover {
   color: #a4657a;
 }
-/* MAKE NEW FLEX FOR CONTACT AND RESUME SECTION*/
 
 /* Footer */
 .footer {
@@ -151,4 +158,12 @@ h2 {
   padding: 30px;
   clear: both;
   text-align: center;
+}
+
+/* Media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+}
+
+/*Media query for smaller desktop screens and smaller*/
+@media screen and (max-width: 650px) {
 }
