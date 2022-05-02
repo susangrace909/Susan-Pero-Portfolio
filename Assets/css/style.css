@@ -79,6 +79,13 @@ a {
   color: #ffffff;
 }
 
+/*Resize picture of  me*/
+.AboutMe img {
+  margin-left: 20px;
+  width: 20%;
+  height: 20%;
+}
+
 /*Project placards*/
 .project div {
   display: flex;
